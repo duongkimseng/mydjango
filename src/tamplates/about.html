@@ -1,0 +1,18 @@
+<html>
+    <title>About</title>
+    <head>
+
+    </head>
+
+
+    <body>
+        <h1>About Us</h1>
+        {{ my_text }}
+        {{ my_number }}
+        <ul>
+            {% for my_sub_item in my_list %}
+                <li><h3> {{ forloop.counter }} - {{ my_sub_item }} </h3></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
